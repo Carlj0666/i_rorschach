@@ -1,1 +1,1 @@
-Hi folks! My las project takes off now!
+Hi folks! My last project takes off now!
