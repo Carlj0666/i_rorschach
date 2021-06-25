@@ -1,1 +1,24 @@
-Hi folks! My last project takes off now!
+i-Rorschach - Basic Outline
+	Displays Rorschach images
+	Allows visitors to comment
+
+Image/Comment associations:
+	An image has many comments
+	A comment belongs to an image
+
+	GET
+		Fetch -
+		Draws a random image and displays it
+		Fetch -
+		Shows image comments when clicked
+
+	POSTER
+		Comments on an image
+
+APP STRUCTURE NOTES
+    cards container - renders all the image cards
+    image card
+
+
+    Form to submit comments (no users)
+        form component
