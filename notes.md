@@ -17,16 +17,21 @@ Image/Comment associations:
 
 APP STRUCTURE NOTES
     Image cards container - displays everything
-        Image Cards -  Displays imgs, form and subbed comments
+        Image Card -  Displays imgs, form and subbed comments
             Form to submit comments (no users)
             Image - image
                 Comment card - comment
+
+STATELESS COMPONENTS - need 5
 home 
 about 
 nav bar 
-picture card
+picture cards
 
-    
-        form component
+Started coding for thunk in index file (commented out), and also (imageCardActions file...createted imageCardReducer file, no code yet), research...Thunk, implement
+
+Vids to study
+21:49 - Friday pod - https://www.youtube.com/watch?v=WdgryU-QYiA
+36:32 - 42:00 THUNK - https://www.youtube.com/watch?v=t2oR5hihOIU
 
     
