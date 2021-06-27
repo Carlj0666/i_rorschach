@@ -17,7 +17,7 @@ Image/Comment associations:
 
 APP STRUCTURE NOTES
     Image cards container - displays everything
-        Image Card -  Displays imgs, form and subbed comments
+        Image Card -  Displays imgs, form and subbmitted comments
             Form to submit comments (no users)
             Image - image
                 Comment card - comment
