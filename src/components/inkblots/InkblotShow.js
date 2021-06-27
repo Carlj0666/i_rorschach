@@ -1,13 +1,13 @@
 import React from 'react'
 
-class ImageShow extends React.Component {
+class InkblotShow extends React.Component {
     render(){
         return (
             <div>
-                'imageShow'
+                'inkblotShow'
             </div>   
         )
     }
 }
 
-export default ImageShow
+export default InkblotShow

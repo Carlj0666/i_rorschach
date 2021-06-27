@@ -1,7 +1,7 @@
 import './App.css';
 
 import Homepage from './components/Homepage'
-import ImageList from './components/images/ImageList'
+import InkblotList from './components/inkblots/InkblotList'
 // import ImageCard from './components/images/ImageCard'
 // import ImageShow from './components/images/ImageShow'
 // import ImageDetail from './components/images/ImageDetail'
@@ -37,7 +37,7 @@ function App() {
           <br />
           <hr />
           <Route exact path="/" component={Homepage} />
-          <Route exact path="/images" component={ImageList} />
+          <Route exact path="/images" component={InkblotList} />
     </div>
     </Router>
   );

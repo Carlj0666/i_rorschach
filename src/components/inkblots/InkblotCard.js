@@ -2,12 +2,12 @@ import React from 'react'
 
 
 
-function ImageCard() {
+function Inkblot() {
     return (
         <div>
-            'ImageCard'
+            'Inkblot'
         </div>   
     )
 }
 
-export default ImageCard
+export default Inkblot
