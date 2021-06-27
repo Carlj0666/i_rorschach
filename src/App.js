@@ -2,12 +2,12 @@ import './App.css';
 
 import Homepage from './components/Homepage'
 import ImageList from './components/images/ImageList'
-import ImageCard from './components/images/ImageCard'
-import ImageShow from './components/images/ImageShow'
-import ImageDetail from './components/images/ImageDetail'
-import Comments from './components/comments/Comments'
-import Comment from './components/comments/Comment'
-import CommentForm from './components/comments/CommentForm'
+// import ImageCard from './components/images/ImageCard'
+// import ImageShow from './components/images/ImageShow'
+// import ImageDetail from './components/images/ImageDetail'
+// import Comments from './components/comments/Comments'
+// import Comment from './components/comments/Comment'
+// import CommentForm from './components/comments/CommentForm'
 
 //router
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'

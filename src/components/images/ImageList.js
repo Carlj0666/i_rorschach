@@ -1,14 +1,17 @@
 import React from 'react'
- 
+import { connect } from 'react-redux'
+
 
 class ImageList extends React.Component {
     render(){
         return (
-            <div>
+            <div id='image-list'>
                 'imagelist'
             </div>   
         )
     }
 }
 
-export default ImageList
+
+
+export default connect(mapStateToProps)(ImageList)
