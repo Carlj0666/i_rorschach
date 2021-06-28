@@ -2,18 +2,11 @@ i-Rorschach - Basic Outline
 	Displays Rorschach inkblots
 	Allows visitors to comment
 
-inkblot/Comment associations:
-	An inkblot has many comments
-	A comment belongs to an inkblot
+	TO DO:
+		left off at THUNK lecture 30:00: https://www.youtube.com/watch?v=t2oR5hihOIU
 
-	GET
-		Fetch -
-		Draws a random inkblot and displays it
-		Fetch -
-		Shows inkblot comments when clicked
+	
 
-	POSTER
-		Comments on an inkblot
 
 APP STRUCTURE NOTES:
 App - Connect Router in APP.JS -  review routing
@@ -28,8 +21,6 @@ App - Connect Router in APP.JS -  review routing
 
 STATELESS COMPONENTS - need 5
 
-
-TO DO NOTES:
 
 
 	
