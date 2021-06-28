@@ -12,12 +12,11 @@ class InkblotList extends React.Component {
         .then(json => {
             const inkblots = json.data
             console.log(inkblots)
-    //         this.props.setInkblots(inkblots)
+            this.props.setInkblots(inkblots)
         })
     }
 
     makeInkblotCards(){
-
         return this.props.inkblots.map(inkblot => <InkblotCard
             key={inkblot.id}
             id={inkblot.id}
@@ -27,9 +26,8 @@ class InkblotList extends React.Component {
   
     render(){
         return (
-            <div>
-               some thing
-                {/* {this.makeInkblotCards()} */}
+            <div id='inkblots-list'>
+                {this.props.loading ? <h3>Loading</h3> : this.makeInkblotCards()}
             </div>   
         )
     }
@@ -37,15 +35,15 @@ class InkblotList extends React.Component {
 
 const mapStateToProps = (state) => {
     return {
-        inkblots: state.inkblots
+        inkblots: state.inkblots,
+        loading: state.loading
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
-   
     return {
         setInkblots: (inkblots) => dispatch({type: 'FETCHED_INKBLOTS', payload: inkblots})
     }
 }
 
-export default connect(mapDispatchToProps, mapStateToProps)(InkblotList)
+export default connect(mapStateToProps, mapDispatchToProps)(InkblotList)
