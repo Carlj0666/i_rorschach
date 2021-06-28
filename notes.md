@@ -3,7 +3,7 @@ i-Rorschach - Basic Outline
 	Allows visitors to comment
 
 	TO DO:
-		left off at THUNK lecture 30:00: https://www.youtube.com/watch?v=t2oR5hihOIU
+		left off at THUNK lecture 39:33: https://www.youtube.com/watch?v=t2oR5hihOIU
 
 	
 

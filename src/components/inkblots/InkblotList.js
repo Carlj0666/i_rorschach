@@ -2,20 +2,12 @@ import React from 'react'
 import { connect } from 'react-redux'
 import InkblotCard from './InkblotCard'
 
-import { setInkblots } from '../../actions/inkblotCardActions'
+import { fetchInkblots } from '../../actions/inkblotCardActions'
 
 class InkblotList extends React.Component {
 
     componentDidMount(){
-        // const url = 'http://127.0.0.1:3001/inkblots'
-
-        // fetch(url)
-        // .then(resp => resp.json())
-        // .then(json => {
-        //     const inkblots = json.data
-        //     console.log(inkblots)
-        //     this.props.setInkblots(inkblots)
-        // })
+        this.props.fetchInkblots()
     }
 
     makeInkblotCards(){
@@ -44,7 +36,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        setInkblots: (inkblots) => dispatch(setInkblots(inkblots))
+        fetchInkblots: () => dispatch(fetchInkblots())
     }
 }
 
