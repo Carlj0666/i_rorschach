@@ -1,9 +1,12 @@
 import React from 'react'
+import CommentForm from '../comments/CommentForm'
+
 
 function InkblotCard() {
-    return (
+    return(
         <div>
-            'Inkblot'
+            {/* <CommentForm /> */}
+           
         </div>   
     )
 }

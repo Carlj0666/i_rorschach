@@ -2,12 +2,12 @@ import './App.css';
 
 import Homepage from './components/Homepage'
 import InkblotList from './components/inkblots/InkblotList'
-//import InkblotCard from './components/inkblots/InkblotCard'
+import InkblotCard from './components/inkblots/InkblotCard'
 // import InkblotShow from './components/inkblots/InkblotShow'
 // import InkblotDetail from './components/inkblots/InkblotDetail'
 // import Comments from './components/comments/Comments'
-// import Comment from './components/comments/Comment'
-// import CommentForm from './components/comments/CommentForm'
+import Comment from './components/comments/Comment'
+import CommentForm from './components/comments/CommentForm'
 
 //router
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
@@ -38,6 +38,9 @@ function App() {
           <hr />
           <Route exact path="/" component={Homepage} />
           <Route exact path="/inkblots" component={InkblotList} />
+          {/* <CommentForm />
+          <InkblotCard />
+          <Comment /> */}
     </div>
     </Router>
   );

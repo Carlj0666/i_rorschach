@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import InkblotCard from './InkblotCard'
+import CommentForm from '../comments/CommentForm'
 
 import { fetchInkblots } from '../../actions/inkblotCardActions'
 
@@ -20,7 +21,7 @@ class InkblotList extends React.Component {
   
     render(){
         return (
-            <div id='inkblots-list'>
+            <div id='inkblot-list'>
                 {this.props.loading ? <h3>Loading</h3> : this.makeInkblotCards()}
             </div>   
         )
@@ -29,6 +30,7 @@ class InkblotList extends React.Component {
 
 const mapStateToProps = (state) => {
     return {
+        
         inkblots: state.inkblots,
         loading: state.loading
     }

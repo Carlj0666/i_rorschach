@@ -3,7 +3,9 @@ i-Rorschach - Basic Outline
 	Allows visitors to comment
 
 	TO DO:
-		left off at THUNK lecture 39:33: https://www.youtube.com/watch?v=t2oR5hihOIU
+		left off at THUNK lecture 43:59: https://www.youtube.com/watch?v=t2oR5hihOIU
+
+		1) Get into form build next
 
 APP STRUCTURE NOTES:
 App - Connect Router in APP.JS -  review routing
