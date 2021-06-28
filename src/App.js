@@ -2,7 +2,7 @@ import './App.css';
 
 import Homepage from './components/Homepage'
 import InkblotList from './components/inkblots/InkblotList'
-// import InkblotCard from './components/inkblots/InkblotCard'
+//import InkblotCard from './components/inkblots/InkblotCard'
 // import InkblotShow from './components/inkblots/InkblotShow'
 // import InkblotDetail from './components/inkblots/InkblotDetail'
 // import Comments from './components/comments/Comments'
