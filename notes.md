@@ -5,9 +5,6 @@ i-Rorschach - Basic Outline
 	TO DO:
 		left off at THUNK lecture 39:33: https://www.youtube.com/watch?v=t2oR5hihOIU
 
-	
-
-
 APP STRUCTURE NOTES:
 App - Connect Router in APP.JS -  review routing
   /         - homepage - links to /inkblots

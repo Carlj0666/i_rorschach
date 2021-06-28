@@ -4,6 +4,7 @@ export const setInkblots = (inkblots) => ({type: 'FETCHED_INKBLOTS', payload: in
 
 export const fetchInkblots = () => {
     return (dispatch) => {
+        dispatch({type: 'LOADING'})
         fetch(url)
         .then(resp => resp.json())
         .then(json => {
