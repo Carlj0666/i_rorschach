@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import InkblotCard from './InkblotCard'
 
 class InkblotList extends React.Component {
 
@@ -14,7 +15,9 @@ class InkblotList extends React.Component {
         })
     }
 
-    makeImageCards(){
+    makeInkblotCards(){
+        
+debugger
         return this.props.inkblots.map(inkblot => <InkblotCard
             key={inkblot.id}
             id={inkblot.id}
@@ -24,7 +27,7 @@ class InkblotList extends React.Component {
   
     render(){
         return (
-            <div id='inkblot-list'>
+            <div>
                 {this.makeInkblotCards()}
             </div>   
         )
@@ -39,7 +42,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        setInkblots: (inkblots) => dispatch({type: 'FETCHED_ITEMS', payload: inkblots})
+        setInkblots: (inkblots) => dispatch({type: 'FETCHED_INKBLOTS', payload: inkblots})
     }
 }
 

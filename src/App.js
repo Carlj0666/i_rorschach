@@ -2,9 +2,9 @@ import './App.css';
 
 import Homepage from './components/Homepage'
 import InkblotList from './components/inkblots/InkblotList'
-// import ImageCard from './components/images/ImageCard'
-// import ImageShow from './components/images/ImageShow'
-// import ImageDetail from './components/images/ImageDetail'
+// import InkblotCard from './components/inkblots/InkblotCard'
+// import InkblotShow from './components/inkblots/InkblotShow'
+// import InkblotDetail from './components/inkblots/InkblotDetail'
 // import Comments from './components/comments/Comments'
 // import Comment from './components/comments/Comment'
 // import CommentForm from './components/comments/CommentForm'
@@ -25,7 +25,7 @@ const link = {
 const Navbar = () =>
   <div>
     <NavLink to="/" exact style={link} activeStyle={{background: 'darkblue'}}>Homepage</NavLink>
-    <NavLink to="/images" exact style={link} activeStyle={{background: 'darkblue'}}>Images</NavLink>
+    <NavLink to="/inkblots" exact style={link} activeStyle={{background: 'darkblue'}}>inkblots</NavLink>
   </div>
 
 
@@ -37,7 +37,7 @@ function App() {
           <br />
           <hr />
           <Route exact path="/" component={Homepage} />
-          <Route exact path="/images" component={InkblotList} />
+          <Route exact path="/inkblots" component={InkblotList} />
     </div>
     </Router>
   );
