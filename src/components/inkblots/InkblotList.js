@@ -12,6 +12,8 @@ class InkblotList extends React.Component {
     }
 
     makeInkblotCards(){
+
+        // console.log(this.props.inkblots[0].attributes.link)
         return this.props.inkblots.map(inkblot => <InkblotCard
             key={inkblot.id}
             id={inkblot.id}

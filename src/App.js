@@ -12,6 +12,8 @@ import CommentForm from './components/comments/CommentForm'
 //router
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
 
+
+
 //navbar styling
 const link = {
   width: '100px',
@@ -38,8 +40,9 @@ function App() {
           <hr />
           <Route exact path="/" component={Homepage} />
           <Route exact path="/inkblots" component={InkblotList} />
-          {/* <CommentForm />
           <InkblotCard />
+          {/* <CommentForm />
+          
           <Comment /> */}
     </div>
     </Router>

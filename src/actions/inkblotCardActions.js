@@ -11,7 +11,7 @@ export const fetchInkblots = () => {
         .then(resp => resp.json())
         .then(json => {
             const inkblots = json.data
-            console.log(inkblots[0].relationships.comments.data[0])
+            console.log(inkblots[0].attributes.comments[0].verbiage)
             dispatch(setInkblots(inkblots))
         })
     }

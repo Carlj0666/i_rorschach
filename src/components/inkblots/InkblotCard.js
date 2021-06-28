@@ -1,14 +1,20 @@
 import React from 'react'
-import CommentForm from '../comments/CommentForm'
+// import CommentForm from '../comments/CommentForm'
+import { connect } from 'react-redux'
 
 
-function InkblotCard() {
+function InkblotCard(props) {
+    console.log(props.link)
     return(
+
         <div>
-            {/* <CommentForm /> */}
-           
+            <img src={props.link} />
         </div>   
     )
 }
+
+
+
+
 
 export default InkblotCard
