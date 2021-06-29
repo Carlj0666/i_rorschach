@@ -1,6 +1,6 @@
 import React from 'react'
 
-class Comments extends React.Component {
+class CommentsList extends React.Component {
     render(){
         return (
             <div>
@@ -10,4 +10,4 @@ class Comments extends React.Component {
     }
 }
 
-export default Comments
+export default CommentsList
