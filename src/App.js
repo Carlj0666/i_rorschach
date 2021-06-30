@@ -1,18 +1,12 @@
 import './App.css';
 
 import Homepage from './components/Homepage'
+import About from './components/About';
 import InkblotList from './containers/InkblotList'
-import InkblotCard from './components/inkblots/InkblotCard'
-import InkblotShow from './components/inkblots/InkblotShow'
-// import InkblotDetail from './components/inkblots/InkblotDetail'
-// import Comments from './components/comments/Comments'
-// import Comment from './components/comments/Comment'
-// import CommentForm from './components/comments/CommentForm'
+import ImageForm from './components/ImageForm'
 
 //router
 import { BrowserRouter as Router, Route, NavLink, Switch, Link } from 'react-router-dom'
-
-
 
 //navbar styling
 const link = {
@@ -27,24 +21,24 @@ const link = {
 const Navbar = () =>
   <div>
     <NavLink to="/" exact style={link} activeStyle={{background: 'darkblue'}}>Homepage</NavLink>
+    <NavLink to="/about" exact style={link} activeStyle={{background: 'darkblue'}}>About</NavLink>
     <NavLink to="/inkblots" exact style={link} activeStyle={{background: 'darkblue'}}>inkblots</NavLink>
+    <NavLink to="/submit-an-image" exact style={link} activeStyle={{background: 'darkblue'}}>Submit an Image</NavLink>
   </div>
 
 
 function App() {
   return (
     <Router>
-    <div className="App">
-      <Navbar />
-          <br />
-          <hr />
-          <Route exact path="/" component={Homepage} />
-          <Route exact path="/inkblots" component={InkblotList} />
-          <Route path="/inkblots/:something/" component={InkblotShow} />
-          <InkblotCard />
-          {/* <CommentForm />
-          <Comment /> */}
-    </div>
+      <div className="App">
+        <Navbar />
+            <br />
+            <hr />
+            <Route exact path="/" component={Homepage} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/inkblots" component={InkblotList} />
+            <Route exact path="/submit-an-image" component={InkblotList} />
+      </div>
     </Router>
   );
 }

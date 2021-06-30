@@ -9,5 +9,3 @@ function Homepage() {
 }
 
 export default Homepage
-
-//will contain links to the INDEX(ImageList) - /images

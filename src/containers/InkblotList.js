@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import InkblotCard from '../components/inkblots/InkblotCard'
-// import CommentForm from '../components/comments/CommentForm'
+import Inkblot from '../components/Inkblot'
+import ImageForm from '../components/ImageForm'
 
 import { fetchInkblots } from '../actions/inkblotCardActions'
 
@@ -14,7 +14,7 @@ class InkblotList extends React.Component {
     makeInkblotCards(){
 
         // console.log(this.props.inkblots[0].attributes)
-        return this.props.inkblots.map(inkblot => <InkblotCard
+        return this.props.inkblots.map(inkblot => <Inkblot
             key={inkblot.id}
             id={inkblot.id}
             link={inkblot.attributes.link}
@@ -24,9 +24,15 @@ class InkblotList extends React.Component {
   
     render(){
         return (
-            <div id='inkblot-list'>
-                {this.props.loading ? <h3>Loading</h3> : this.makeInkblotCards()}
-            </div>   
+            <>
+                <div>
+                    <ImageForm />
+                </div>
+                <div id='inkblot-list'>
+                    {this.props.loading ? <h3>Loading</h3> : this.makeInkblotCards()}
+                </div>
+                
+            </>
         )
     }
 }
