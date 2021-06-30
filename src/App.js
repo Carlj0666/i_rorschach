@@ -26,7 +26,6 @@ const Navbar = () =>
     <NavLink to="/submit-an-image" exact style={link} activeStyle={{background: 'darkblue'}}>Submit an Image</NavLink>
   </div>
 
-
 function App() {
   return (
     <Router>
