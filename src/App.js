@@ -3,11 +3,6 @@ import './App.css';
 import Homepage from './components/Homepage'
 import InkblotList from './containers/InkblotList'
 import InkblotCard from './components/inkblots/InkblotCard'
-import InkblotShow from './components/inkblots/InkblotShow'
-// import InkblotDetail from './components/inkblots/InkblotDetail'
-// import Comments from './components/comments/Comments'
-// import Comment from './components/comments/Comment'
-// import CommentForm from './components/comments/CommentForm'
 
 //router
 import { BrowserRouter as Router, Route, NavLink, Switch, Link } from 'react-router-dom'
@@ -40,10 +35,7 @@ function App() {
           <hr />
           <Route exact path="/" component={Homepage} />
           <Route exact path="/inkblots" component={InkblotList} />
-          <Route path="/inkblots/:something/" component={InkblotShow} />
-          <InkblotCard />
-          {/* <CommentForm />
-          <Comment /> */}
+
     </div>
     </Router>
   );
