@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import InkblotCard from '../components/inkblots/InkblotCard'
+import Inkblot from '../components/Inkblot'
 // import CommentForm from '../components/comments/CommentForm'
 
 import { fetchInkblots } from '../actions/inkblotCardActions'
@@ -14,7 +14,7 @@ class InkblotList extends React.Component {
     makeInkblotCards(){
 
         // console.log(this.props.inkblots[0].attributes)
-        return this.props.inkblots.map(inkblot => <InkblotCard
+        return this.props.inkblots.map(inkblot => <Inkblot
             key={inkblot.id}
             id={inkblot.id}
             link={inkblot.attributes.link}

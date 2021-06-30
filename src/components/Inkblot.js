@@ -1,6 +1,6 @@
 import React from 'react'
 
-function InkblotCard(props) {
+function Inkblot(props) {
     console.log(props)
     return(
         <div>
@@ -9,4 +9,4 @@ function InkblotCard(props) {
     )
 }
 
-export default InkblotCard
+export default Inkblot
