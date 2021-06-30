@@ -5,11 +5,6 @@ function InkblotCard(props) {
     return(
         <div>
             <img src={props.link} alt=""/>
-            <ul>
-                <li>
-                    {props.comment}
-                </li>
-            </ul>
         </div>
     )
 }

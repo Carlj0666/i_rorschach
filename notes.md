@@ -25,3 +25,6 @@ STATELESS COMPONENTS - need 5
 () 3) Click an inkblot (or buton etc) and display the inkblot show
 () 4) 
 	
+APP -> HomePage
+	-> INDEX
+	-> FORM

@@ -1,6 +1,7 @@
 import './App.css';
 
 import Homepage from './components/Homepage'
+import About from './components/About';
 import InkblotList from './containers/InkblotList'
 import InkblotCard from './components/inkblots/InkblotCard'
 
@@ -22,7 +23,9 @@ const link = {
 const Navbar = () =>
   <div>
     <NavLink to="/" exact style={link} activeStyle={{background: 'darkblue'}}>Homepage</NavLink>
+    <NavLink to="/about" exact style={link} activeStyle={{background: 'darkblue'}}>About</NavLink>
     <NavLink to="/inkblots" exact style={link} activeStyle={{background: 'darkblue'}}>inkblots</NavLink>
+   
   </div>
 
 
@@ -34,6 +37,7 @@ function App() {
           <br />
           <hr />
           <Route exact path="/" component={Homepage} />
+          <Route exact path="/about" component={About} />
           <Route exact path="/inkblots" component={InkblotList} />
 
     </div>
