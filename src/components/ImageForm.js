@@ -12,16 +12,25 @@ class ImageForm extends React.Component {
     // }
 
     handleChange = (event) => {
-        this.setState({
-            link: event.target.value
-        })
+        const link = event.target.name
+        const value = event.target.value
+        const regex = /(https?:\/\/.*\.(?:png|jpg))/i
+        if (regex.test(value)) {
+            console.log(value)
+            this.setState({
+                [link]: value
+            })
+        } else {
+           alert("Not a valid Link")
+        }
+  
     }
 
     render(){
         return(
             <div>
                 <form onSubmit={this.handleInput}>
-                    <label>Submit Your Image Here</label>
+                    <label>Paste Your Image Link Here</label>
                     <br></br>
                     <input 
                         type="text" 
