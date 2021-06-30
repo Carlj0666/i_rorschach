@@ -25,3 +25,10 @@ STATELESS COMPONENTS - need 5
 		-> NavBar
 		-> Inkblot
 		
+
+		Left off woring on POST error from backend, something to do with create action in the controller
+
+		inkblotCardActions.js:29 POST http://127.0.0.1:3001/inkblots 500 (Internal Server Error)
+
+		Rails as an api (REVIEWED BUT NO ANSWERS) - https://www.youtube.com/watch?v=SJlvydXVHcg
+		MAYBE JS CRUD?

@@ -28,6 +28,7 @@ const Navbar = () =>
 function App() {
   return (
     <Router>
+      <Switch>
       <div className="App">
         <Navbar />
             <br />
@@ -37,6 +38,7 @@ function App() {
             <Route exact path="/inkblots" component={InkblotList} />
             <Route exact path="/submit-an-image" component={InkblotList} />
       </div>
+      </Switch>
     </Router>
   );
 }
