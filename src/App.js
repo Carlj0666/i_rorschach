@@ -3,27 +3,12 @@ import './App.css';
 import Homepage from './components/Homepage'
 import About from './components/About';
 import InkblotList from './containers/InkblotList'
+import Navbar from './components/navBar';
 
 //router
 import { BrowserRouter as Router, Route, NavLink, Switch, Link } from 'react-router-dom'
 
-//navbar styling
-const link = {
-  width: '100px',
-  padding: '12px',
-  margin: '0 6px 6px',
-  background: 'blue',
-  textDecoration: 'none',
-  color: 'white',
-}
-// Navbar
-const Navbar = () =>
-  <div>
-    <NavLink to="/" exact style={link} activeStyle={{background: 'darkblue'}}>Homepage</NavLink>
-    <NavLink to="/about" exact style={link} activeStyle={{background: 'darkblue'}}>About</NavLink>
-    <NavLink to="/inkblots" exact style={link} activeStyle={{background: 'darkblue'}}>inkblots</NavLink>
-    <NavLink to="/submit-an-image" exact style={link} activeStyle={{background: 'darkblue'}}>Submit an Image</NavLink>
-  </div>
+
 
 function App() {
   return (

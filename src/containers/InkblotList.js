@@ -23,7 +23,6 @@ class InkblotList extends React.Component {
     }
 
     addNewInkblot = (data) => {
-        console.log(data)
         const newInkblot = {
             link: data.link
         }

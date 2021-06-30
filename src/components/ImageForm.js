@@ -17,7 +17,7 @@ class ImageForm extends React.Component {
             this.setState({
                 link: value
                 
-            }, () => console.log(value))
+            })
         } else {
            alert("Not a valid Link")
         }

@@ -29,7 +29,7 @@ export const createInkblots = (inkblot) => {
         fetch(url, configObj)
         .then(resp => resp.json())
         .then(json => {
-            console.log(json)
+            // console.log(json)
             const newinkblot = json.data
             dispatch(addInkblot(newinkblot))
         })
