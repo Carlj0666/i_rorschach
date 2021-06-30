@@ -30,7 +30,7 @@ export const createInkblots = (inkblot) => {
         .then(resp => resp.json())
         .then(json => {
             console.log(json)
-            // getting 404 error here on response
+            // getting 404 error on response
         })
     }
 }
