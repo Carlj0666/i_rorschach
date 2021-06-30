@@ -1,4 +1,6 @@
 import React from 'react'
+import {createInkblots} from '../actions/inkblotCardActions'
+import {connect} from 'react-redux'
 
 class ImageForm extends React.Component {
 
@@ -6,25 +8,28 @@ class ImageForm extends React.Component {
         link: ''
     }
 
-    handleSubmit = (event) => {
-        event.preventDefault()
-        //pass current state to parent
-        this.props.handleOnSubmit(this.state) 
-    }
-
     handleChange = (event) => {
         const link = event.target.name
         const value = event.target.value
         const regex = /(https?:\/\/.*\.(?:png|jpg))/i
         if (regex.test(value)) {
-            console.log(value)
+            // console.log(value)
             this.setState({
                 [link]: value
             })
         } else {
            alert("Not a valid Link")
         }
-  
+    }
+
+    handleSubmit = (event) => {
+        event.preventDefault()
+
+        this.props.createInkblots(this.state)
+
+        this.setState = ({
+            link: ''
+        })
     }
 
     render(){
@@ -47,4 +52,4 @@ class ImageForm extends React.Component {
                 
 }
 
-export default ImageForm
+export default connect(null, {createInkblots})(ImageForm)

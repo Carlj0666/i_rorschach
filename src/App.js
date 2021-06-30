@@ -3,7 +3,6 @@ import './App.css';
 import Homepage from './components/Homepage'
 import About from './components/About';
 import InkblotList from './containers/InkblotList'
-import ImageForm from './components/ImageForm'
 
 //router
 import { BrowserRouter as Router, Route, NavLink, Switch, Link } from 'react-router-dom'
