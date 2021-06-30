@@ -6,10 +6,11 @@ class ImageForm extends React.Component {
         link: ''
     }
 
-    // handleInput = (event) => {
-    //     event.preventDefault()
-    //     console.log(this.state)
-    // }
+    handleSubmit = (event) => {
+        event.preventDefault()
+        //pass current state to parent
+        this.props.handleOnSubmit(this.state) 
+    }
 
     handleChange = (event) => {
         const link = event.target.name
@@ -29,7 +30,7 @@ class ImageForm extends React.Component {
     render(){
         return(
             <div>
-                <form onSubmit={this.handleInput}>
+                <form onSubmit={this.handleSubmit}>
                     <label>Paste Your Image Link Here</label>
                     <br></br>
                     <input 

@@ -19,13 +19,9 @@ App - Connect Router in APP.JS -  review routing
 						- commentForm - connected to store
 
 STATELESS COMPONENTS - need 5
-
-(X) 1) Create new InkblotCard with fetched data
-() 2) Show coments in inkblot card
-() 3) Click an inkblot (or buton etc) and display the inkblot show
-() 4) 
 	
-APP -> HomePage
-	-> INDEX
+-> APP 	-> HomePage
+	   	-> INDEX
+		-> NavBar
+		-> Inkblot
 		
-	-> FORM

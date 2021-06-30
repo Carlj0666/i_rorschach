@@ -21,12 +21,16 @@ class InkblotList extends React.Component {
             
             />)
     }
+
+    addNewInkblot = (data) => {
+        console.log(data)
+    }
   
     render(){
         return (
             <>
                 <div>
-                    <ImageForm />
+                    <ImageForm handleOnSubmit={this.addNewInkblot}/>
                 </div>
                 <div id='inkblot-list'>
                     {this.props.loading ? <h3>Loading</h3> : this.makeInkblotCards()}
