@@ -13,10 +13,8 @@ class ImageForm extends React.Component {
         const value = event.target.value
         const regex = /(https?:\/\/.*\.(?:png|jpg))/i
         if (regex.test(value)) {
-             // Issue is here, data not persisting
             this.setState({
                 link: value
-                
             })
         } else {
            alert("Not a valid Link")
@@ -28,7 +26,7 @@ class ImageForm extends React.Component {
 
         this.props.createInkblots(this.state)
 
-        this.setState = ({
+        this.setState({
             link: ""
         })
     }

@@ -2,7 +2,7 @@ const url = 'http://127.0.0.1:3001/inkblots'
 
 export const setInkblots = (inkblots) => ({type: 'FETCHED_INKBLOTS', payload: inkblots})
 
-export const addInkblot = (inkblot) => ({type: 'ADDED_ITEM', payload: inkblot})
+export const addInkblot = (inkblot) => ({type: 'ADDED_INKBLOT', payload: inkblot})
 
 export const fetchInkblots = () => {
     return (dispatch) => {
