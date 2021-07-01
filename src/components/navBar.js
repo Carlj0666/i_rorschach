@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BrowserRouter as Router, NavLink, Switch} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 const link = {
     width: '100px',
