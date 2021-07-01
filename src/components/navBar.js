@@ -16,14 +16,11 @@ const link = {
 function Navbar(){
     return(
         <Router>
-            
             <div>
                 <NavLink to="/" exact style={link} activeStyle={{background: 'darkblue'}}>Homepage</NavLink>
                 <NavLink to="/about" exact style={link} activeStyle={{background: 'darkblue'}}>About</NavLink>
                 <NavLink to="/inkblots" exact style={link} activeStyle={{background: 'darkblue'}}>inkblots</NavLink>
-                <NavLink to="/submit" exact style={link} activeStyle={{background: 'darkblue'}}>Submit an Image</NavLink>
             </div>
-            
         </Router>
     )
 }

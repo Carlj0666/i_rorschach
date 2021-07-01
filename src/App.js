@@ -4,10 +4,10 @@ import Homepage from './components/Homepage'
 import About from './components/About';
 import InkblotList from './containers/InkblotList'
 import Navbar from './components/navBar';
-import ImageForm from './components/ImageForm';
 
 //router
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+
 
 
 function App() {
@@ -15,15 +15,14 @@ function App() {
     <Router>
       <Switch>
         <>
-        <div className="App">
-              <Navbar />
-              <br />
-              <hr />
-              <Route exact path="/" component={Homepage} />
-              <Route exact path="/about" component={About} />
-              <Route exact path="/inkblots" component={InkblotList} />
-              <Route exact path="/submit" component={ImageForm} />
-        </div>
+          <div className="App">
+                <Navbar />
+                <br />
+                <hr />
+                <Route exact path="/" component={Homepage} />
+                <Route exact path="/about" component={About} />
+                <Route exact path="/inkblots" component={InkblotList} />
+          </div>
         </>
       </Switch>
     </Router>
