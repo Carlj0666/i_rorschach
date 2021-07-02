@@ -5,7 +5,7 @@ function inkblotReducer(state = {inkblots: [], loading: false}, action){
       case 'FETCHED_INKBLOTS':
         return {...state, inkblots: action.payload, loading: false}
       
-        case 'ADDED_INKBLOT':
+      case 'ADDED_INKBLOT':
         return {...state, inkblots: [...state.inkblots, action.payload]}
 
       case 'LOADING':

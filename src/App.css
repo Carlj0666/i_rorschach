@@ -1,10 +1,18 @@
 .App {
   text-align: center;
+  color: white;
+  font-family: Garamond, serif;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+p {
+  color: white;
+  text-indent: 30px;
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
