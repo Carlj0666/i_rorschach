@@ -9,7 +9,6 @@ class ImageForm extends React.Component {
     }
 
     handleChange = (event) => {
-        // const link = event.target.name
         const value = event.target.value
         const regex = /(https?:\/\/.*\.(?:png|jpg))/i
         if (regex.test(value)) {

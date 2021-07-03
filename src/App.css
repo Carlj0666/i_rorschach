@@ -15,6 +15,20 @@ p {
   text-align: center;
 }
 
+a:visited {
+  color: pink;
+}
+
+a:link {
+  color: lightblue;
+}
+
+/* mouse over link */
+a:hover {
+  color: light greenyellow;
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

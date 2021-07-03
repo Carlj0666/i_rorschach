@@ -13,7 +13,6 @@ class InkblotList extends React.Component {
 
     makeInkblotCards(){
 
-        // console.log(this.props.inkblots[0].attributes)
         return this.props.inkblots.map(inkblot => <Inkblot
             key={inkblot.id}
             id={inkblot.id}
