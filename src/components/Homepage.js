@@ -10,7 +10,8 @@ function Homepage() {
             <p> known "inkblot test". Subjects would be shown the image and then </p>
             <p> be asked to give their interpretation of it. Upload your own </p>
             <p> inkblots in link form in the inkblots section.</p>
-        </div>   
+            
+        </div>
     )
 }
 
