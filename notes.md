@@ -15,3 +15,5 @@ STATELESS COMPONENTS - need 5
 		-> NavBar
 		-> Inkblot
 		-> Reducer
+
+
