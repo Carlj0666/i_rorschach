@@ -4,8 +4,8 @@ export const setInkblots = (inkblots) => ({type: 'FETCHED_INKBLOTS', payload: in
 
 export const addInkblot = (inkblot) => ({type: 'ADDED_INKBLOT', payload: inkblot})
 
-export const fetchInkblots = () => {
-    return (dispatch) => {
+export const fetchInkblots = 
+        (dispatch) => {
         dispatch({type: 'LOADING'})
         fetch(url)
         .then(resp => resp.json())
@@ -14,7 +14,6 @@ export const fetchInkblots = () => {
             dispatch(setInkblots(inkblots))
         })
     }
-}
 
 export const createInkblots = (inkblot) => {
     return (dispatch) => {

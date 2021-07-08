@@ -39,7 +39,7 @@ class ImageForm extends React.Component {
                     <input
                         type="text" 
                         name="link" 
-                        value={this.state.link} 
+                        value={this.state.link}
                         onChange={this.handleChange}>
                     </input>
                     <input type="submit"></input>

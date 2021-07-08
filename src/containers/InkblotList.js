@@ -20,18 +20,12 @@ class InkblotList extends React.Component {
             
             />)
     }
-
-    addNewInkblot = (data) => {
-        const newInkblot = {
-            link: data.link
-        }
-    }
   
     render(){
         return (
             <>
                 <div>
-                    <ImageForm handleOnSubmit={this.addNewInkblot}/>
+                    <ImageForm />
                 </div>
                 <div id='inkblot-list'>
                     {this.props.loading ? <h3>Loading</h3> : this.makeInkblotCards()}
@@ -52,7 +46,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        fetchInkblots: () => dispatch(fetchInkblots())
+        fetchInkblots: () => dispatch(fetchInkblots)
     }
 }
 
