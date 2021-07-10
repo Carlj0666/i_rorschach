@@ -30,11 +30,11 @@ class InkblotList extends React.Component {
                 <div id='inkblot-list'>
                     {this.props.loading ? <h3>Loading</h3> : this.makeInkblotCards()}
                 </div>
-                
             </>
         )
     }
 }
+
 
 const mapStateToProps = (state) => {
     return {

@@ -37,8 +37,8 @@ class ImageForm extends React.Component {
                     <label>Paste Your Image Link Here</label>
                     <br></br>
                     <input
-                        type="text" 
-                        name="link" 
+                        type="text"
+                        name="link"
                         value={this.state.link}
                         onChange={this.handleChange}>
                     </input>
@@ -47,7 +47,7 @@ class ImageForm extends React.Component {
             </div>
         )
     }
-                
+
 }
 
 export default connect(null, {createInkblots})(ImageForm)

@@ -5,7 +5,6 @@ import About from './components/About';
 import InkblotList from './containers/InkblotList'
 import Navbar from './components/navBar';
 
-//router
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 function App() {
