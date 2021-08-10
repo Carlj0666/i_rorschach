@@ -4,7 +4,7 @@ export const setInkblots = (inkblots) => ({type: 'FETCHED_INKBLOTS', payload: in
 
 export const addInkblot = (inkblot) => ({type: 'ADDED_INKBLOT', payload: inkblot})
 
-export const fetchInkblots = 
+export const fetchInkblots =
         (dispatch) => {
         dispatch({type: 'LOADING'})
         fetch(url)
@@ -13,7 +13,9 @@ export const fetchInkblots =
             const inkblots = json.data
             dispatch(setInkblots(inkblots))
         })
+        
     }
+    
 
 export const createInkblots = (inkblot) => {
     return (dispatch) => {
@@ -25,6 +27,7 @@ export const createInkblots = (inkblot) => {
             },
             body: JSON.stringify(inkblot)
         }
+        
         fetch(url, configObj)
         .then(resp => resp.json())
         .then(json => {

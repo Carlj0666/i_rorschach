@@ -26,10 +26,13 @@ class InkblotList extends React.Component {
             <>
                 <div>
                     <ImageForm />
+                    
                 </div>
+                
                 <div id='inkblot-list'>
                     {this.props.loading ? <h3>Loading</h3> : this.makeInkblotCards()}
                 </div>
+                
             </>
         )
     }

@@ -24,7 +24,7 @@ class ImageForm extends React.Component {
         event.preventDefault()
 
         this.props.createInkblots(this.state)
-
+console.log(this.state)
         this.setState({
             link: ""
         })
@@ -50,4 +50,11 @@ class ImageForm extends React.Component {
 
 }
 
-export default connect(null, {createInkblots})(ImageForm)
+const mapDispatchToProps = (dispatch) => {
+    return {
+        createInkblots: (inkblot) => dispatch(createInkblots(inkblot))
+    }
+}
+
+
+export default connect(null, mapDispatchToProps)(ImageForm)

@@ -12,6 +12,7 @@ function Homepage() {
             <p> inkblots in link form in the inkblots section.</p>
             
         </div>
+        
     )
 }
 
